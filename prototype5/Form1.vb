@@ -5,7 +5,8 @@ Public Class Form1
 
 
 
-
+    Dim cmd As OleDbCommand
+    Dim dr As OleDbDataReader
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtPassword.UseSystemPasswordChar = True
@@ -28,8 +29,7 @@ Public Class Form1
 
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn1.Click
-        Dim cmd As OleDbCommand
-        Dim dr As OleDbDataReader
+
         Dim checker As Integer
 
         Try
